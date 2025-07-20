@@ -1,0 +1,141 @@
+<html>
+    <head>
+        <title>Google Sheets Functionality </title>
+        <ul>
+  <li><a href="Home.html" style="font-size:18px;">Home</a></li>
+  <li><a href="Basic Concept.html" style="font-size:18px;">Basic Concepts</a></li>
+  <li><a href="Advanced formula 1.html" style="font-size:18px;">Advanced Formulas 1</a></li>
+  <li><a href="Advanced Formula 2.html"style="font-size:18px;">Advanced Formulas 2</a></li>
+</ul>
+<style>
+body {
+  background-image: url("ideal.png");
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: green;
+  font-weight: bold;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: rgb(247, 250, 248);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #fafdfb;
+  color:green;
+}
+.div1{
+  border: 10px solid white;
+  background-color: lightgreen;
+
+}
+
+.div1{
+  margin: 175px;
+  background-color:green;
+  border: 1px solid black;
+  
+}
+
+.div1{
+  margin: 6%;
+  font-weight: bold;
+  color:white;
+  font-size:x-large;
+} 
+.div2{
+  border: 10px solid white;
+  background-color: lightgreen;
+
+}
+
+.div2{
+  margin: 175px;
+  background-color:green;
+  border: 1px solid black;
+  
+}
+
+.div2{
+  margin: 6%;
+  font-weight: bold;
+  color:white;
+  font-size:x-large;
+} 
+.div3{
+  border: 10px solid white;
+  background-color: lightgreen;
+
+}
+
+.div3{
+  margin: 175px;
+  background-color:green;
+  border: 1px solid black;
+  
+}
+
+.div3{
+  margin: 6%;
+  font-weight: bold;
+  color:white;
+  font-size:x-large;
+} 
+  
+.content {
+    flex: 1;
+    background-color: rgb(235, 127, 226);
+}
+body {
+    padding: 0;
+    margin:0;
+}
+</style>
+</head>
+
+<body>
+  
+<div class="div1">
+    <div class="transbox">
+    <h3 style="color: orange;">Significance and usage of SUMIF and COUNTIF functions in Google Sheets.</h3>
+    <center><img src="Sum and count.png" width="450px" length="450px"></center>
+    <left><p>The SUMIF and COUNTIF functions in Google Sheets are essential for efficient data analysis, allowing users to sum or count values based on specific criteria. SUMIF sums values that meet a given condition, while COUNTIF counts the number of occurrences that match a specified criterion. These functions streamline calculations, save time, and enable users to quickly derive insights from large datasets, enhancing decision-making and report generation.</p></left>
+  </div>
+</div>
+
+<div class="div2">
+    <div class="transbox">
+    <h3 style="color: red;">How to implement these formulas effectively for SUMIF and COUNTIF.</h3>
+    <p>
+      <center><img src="sumif.jpeg" width="450px" length="450px"></center>
+      The SUMIF function is used to add numbers from a list, but only if they meet a certain condition. 
+In this example, the goal is to find the total points for each Pokémon type like Grass, Fire, and Water. The formula checks the “Type 1” column to see which rows match the type (like “Grass”) and then adds the matching values from the “Total” column. For example, if a Pokémon is “Grass” type, its total points get added to the Grass total. The formula looks like this: =SUMIF(B2:B10, E3, C2:C10), where it checks column B for the type, takes the condition from E3, and adds up the numbers from column C. The same formula is used for Fire and Water, just changing the condition.
+      <center><img src="counif.jpeg" width="450px" length="450px"></center>
+      The COUNTIF function in Google Sheets is used to count how many times a specific value appears in a selected group of cells. The formula is written as =COUNTIF(range, criteria), where the range is the group of cells you’re checking, and the criteria is what you’re looking for. 
+For this example, you want to count how many times the name “Lucy” appears in a list of names from C6 to C13, you’d use =COUNTIF(C6:C13, F5), assuming cell F5 has “Lucy.” In this case, the result would be 2 because “Lucy” appears twice in that list.
+    </p>
+  </div>
+</div>
+
+<div class="div3">
+    <div class="transbox">
+    <h3 style="color: blue;"> Understand the process of applying these formulas.</h3>
+    <p> Using the COUNTIF and SUMIF functions in Excel significantly enhances data analysis efficiency by automating the processes of counting and summing based on specific criteria. COUNTIF allows users to quickly determine the frequency of particular values, making it easy to identify trends or validate data entries without manual effort. Meanwhile, SUMIF enables targeted summation, which is particularly useful for financial analysis, budgeting, and expense tracking, allowing users to assess totals for specific categories effortlessly. Together, these functions save time and streamline the analysis process, facilitating data-driven decision-making and enabling users to uncover insights that can improve productivity and reporting. By leveraging COUNTIF and SUMIF, analysts can focus on interpreting results rather than performing complex calculations.</p>
+  </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,187 @@
+<html>
+    <head>
+        <title>Google Sheets Functionality </title>
+        <ul>
+  <li><a href="Home.html" style="font-size:18px;">Home</a></li>
+  <li><a href="Basic Concept.html" style="font-size:18px;">Basic Concepts</a></li>
+  <li><a href="Advanced formula 1.html" style="font-size:18px;">Advanced Formulas 1</a></li>
+  <li><a href="Advanced Formula 2.html"style="font-size:18px;">Advanced Formulas 2</a></li>
+</ul>
+<style>
+body {
+  background-image: url("ideal.png");
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: green;
+  font-weight: bold;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: rgb(247, 250, 248);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #fafdfb;
+  color:green;
+}
+.div1{
+  border: 10px solid white;
+  background-color: lightgreen;
+
+}
+
+.div1{
+  margin: 175px;
+  background-color:green;
+  border: 1px solid black;
+  
+}
+
+.div1{
+  margin: 6%;
+  font-weight: bold;
+  color:white;
+  font-size:x-large;
+} 
+.div2{
+  border: 10px solid white;
+  background-color: lightgreen;
+
+}
+
+.div2{
+  margin: 175px;
+  background-color:green;
+  border: 1px solid black;
+  
+}
+
+.div2{
+  margin: 6%;
+  font-weight: bold;
+  color:white;
+  font-size:x-large;
+} 
+  
+.content {
+    flex: 1;
+    background-color: rgb(235, 127, 226);
+}
+body {
+    padding: 0;
+    margin:0;
+}
+</style>
+</head>
+
+<body>
+
+<div class="div1">
+    <div class="transbox">
+    <h2 style="color: orange;">How advanced formulas such as VLOOKUP and IF statements are used in Google Sheets.</h2>
+    <p>In Google Sheets, advanced formulas like VLOOKUP and IF statements play a crucial role in data management and analysis. VLOOKUP allows users to search for a specific value in the first column of a designated range and retrieve a corresponding value from another column in the same row. For instance, if you have a product list, you can find the price of a product by its ID using VLOOKUP. On the other hand, the IF statement enables conditional logic, helping you categorize data based on certain criteria. For example, you can determine if students have passed or failed based on their scores by using an IF statement to evaluate whether their score meets a specified threshold. Together, these functions enhance the capability of Google Sheets to handle complex data tasks efficiently.</p>
+  </div>
+</div>
+
+<div class="div2">
+    <div class="transbox">
+    <h2 style="color: blue;">Examples for VLOOKUP and IF statements.</h2>
+    <p>
+      <h4 style="color: blue;">VLOOKUP</h4>
+<center><img src="Vlookup.png" width="450px" length="450px"></center>      
+<p> In the provided Google Sheets example, the formula in cell G2 uses the VLOOKUP function to retrieve the quantity of blue T-shirts from a specified range. 
+  Here's a detailed breakdown of the components and how it works:
+
+Data Overview
+The data in the range B2:D8 includes three columns:
+
+Color (Column B)
+Quantity (Column C)
+Size (Column D)</p>
+<pre> Components of the Formula
+Search Key (G1):
+
+This is the value you are looking for, which in this case is "Blue." The formula will search for this color in the first column of the specified range (B2:B8).
+Range (B2:D8):
+
+This defines the area where the function will search for the search key. 
+The first column of this range (B) is where VLOOKUP will look for "Blue," and the second column (C) 
+is where it will retrieve the corresponding quantity.
+Index (2):
+
+This indicates which column's value to return. Since the quantity is in the second column of the range (C), you use 2.
+If you wanted to retrieve a value from the third column 
+(Size), you would use 3.
+Is Sorted (FALSE):
+
+This parameter specifies whether the first column (Color) is sorted. Setting it to FALSE means that VLOOKUP will search for an exact match.
+If the value is not found, it will 
+return an error.
+What the Formula Does
+When you enter this formula in G2 and G1 contains "Blue," the function performs the following steps:
+
+It searches for "Blue" in the first column of the range (B2:B8).
+Once it finds "Blue" (in cell B3), it looks to the second column of that row (C3) to retrieve the quantity.
+It returns the value found in C3, which is 9.
+
+Summary
+This formula effectively allows you to dynamically look up the quantity of blue T-shirts without needing to manually search through the data. By changing the value in 
+G1, you can quickly find quantities for different colors, making data management more efficient.</pre>
+    </p>
+    <h3 style="color: blue;">IF statements</h3>
+    <center><img src="if.png" width="450px" length="450px"></center>
+    <pre> Understanding the IF Statement
+The IF statement is a logical function that checks whether a specific condition is met. It returns one value if the condition is true and another value if it is false.
+Overview of the Data
+
+In the example provided, we have a table with the following columns:
+
+Student: Names of students.
+Score: Their respective scores.
+Status: Whether they passed or failed.
+Age: Their age and a category indicating if they are an adult or underage.
+
+Explanation of the Formula
+E2 > 17: This is the logical expression. It checks if the value in cell E2 (the age of the student) is greater than 17.
+"Adult": This is the value that will be returned if the condition is true (i.e., if the student is older than 17).
+"Under Age": This is the value that will be returned if the condition is false (i.e., if the student is 17 or younger).
+
+How it Works
+If a student's age in column E is greater than 17, the formula will display "Adult" in column F.
+If the age is 17 or below, it will display "Under Age".
+
+Applying the Formula
+To apply this formula:
+Click on cell F2.
+Enter the formula =IF(E2 > 17, "Adult", "Under Age").
+Press Enter.
+To apply this formula to other students, click on the small square at the bottom right corner of cell F2 (the fill handle) and drag it down to fill the formula in other rows.
+
+Result
+After applying the formula, you will see:
+If a student's age is 18, it will show "Adult".
+If a student's age is 17 or younger, it will show "Under Age".
+
+Summary
+The IF statement is a powerful tool in Google Sheets that allows you to categorize data based on conditions. In this example, it helps determine whether students are classified 
+as adults or underage based on their age. This logical function can be adapted for various scenarios, making it extremely useful for data analysis. If you have any questions 
+or need further clarification, feel free to ask!
+</pre>
+  </div>
+</div>
+
+
+</body>
+</html>
